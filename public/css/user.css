@@ -1,0 +1,33 @@
+#artist{
+
+  text-align: center;
+}
+#artist_image {
+  width: 400px;
+  height: 300px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 0px;
+}
+.events {
+  /*background-color: black;*/
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.events:first-child {
+  width: 200px;
+  height: 200px;
+}
+header{
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
