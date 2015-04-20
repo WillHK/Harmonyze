@@ -6,10 +6,10 @@
 //     });
 //   };
  $.ajax({
-    url: 'http://api.eventful.com/json/events/search?location=Seattle&category=music&date=future&app_key=tVX3L4p7bMfxKVRq',
+    url: 'https://api.eventful.com/json/events/search?location=Seattle&category=music&date=future&app_key=tVX3L4p7bMfxKVRq',
     method: 'GET',
  headers: {
-      // 'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Headers': 'X-Requested-With'
     }
   })
