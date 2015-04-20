@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/WillHK/Harmonyze/issues"
   },
-  "homepage": "https://github.com/WillHK/Harmonyze"
+  "homepage": "https://github.com/WillHK/Harmonyze",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
 }
