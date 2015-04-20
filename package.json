@@ -1,0 +1,24 @@
+{
+  "name": "Harmonyze",
+  "version": "0.0.1",
+  "description": "Dating app based on music taste and matching users up for event-dates.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WillHK/Harmonyze.git"
+  },
+  "keywords": [
+    "harmonyze",
+    "dating",
+    "social"
+  ],
+  "author": "github users: WillHK, Mobot11, Nathanmaas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WillHK/Harmonyze/issues"
+  },
+  "homepage": "https://github.com/WillHK/Harmonyze"
+}
