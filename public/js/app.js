@@ -1,3 +1,5 @@
+
+'use strict'
 $(function() {
   var User = function(userData) {
     this.userId = userData.id;
@@ -17,4 +19,17 @@ $(function() {
     this.artistName = eventData.artistName;
     this.artistImage = eventData.artistImage;
   };
+  $.ajax({
+    url: 'http://api.jambase.com/events?zipCode=98101&radius=50&page=0&api_key=mnenyzm7ngsrdnmmpqpqq6yd',
+    method: 'GET',
+   })
+  .done(function(res) {
+    console.log(res);
+
+  })
+  .fail(function(err) {
+    console.log(err);
+  });
 });
+
+
