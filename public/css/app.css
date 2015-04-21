@@ -12,12 +12,9 @@ body {
     position:static;
     bottom:0;
 }
-
-}
 h6 {
   color: white;
 }
-
 header {
   text-align: center;
 }
@@ -49,4 +46,6 @@ a {
   line-height: 11px     !important;
   text-align: center;
 }
+
+
 
