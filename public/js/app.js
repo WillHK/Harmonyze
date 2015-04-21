@@ -17,6 +17,8 @@ $(function() {
     articleEl.className = 'events';
     var headerEl = document.createElement('header');
     $(headerEl).html('<h6>' + event.artistName + '</h6>');
+    $(articleEl).html("<a href='user.html'></a>");
+    console.log(articleEl);
     $(articleEl).css('background-image', 'url(' + event.artistImage.url + ')');
     articleEl.appendChild(headerEl);
     var footerEl = document.createElement('footer');
