@@ -14,7 +14,7 @@ $(function() {
   };
   var render = function(event) {
     var articleEl = document.createElement('article');
-    articleEl.className = 'eventContainer';
+    articleEl.className = 'events';
     var headerEl = document.createElement('header');
     $(headerEl).html('<h6>' + event.artistName + '</h6>');
     $(articleEl).css('background-image', 'url(' + event.artistImage.url + ')');
@@ -68,7 +68,7 @@ $(function() {
         });
         console.log(eventList);
         eventList.forEach(function(event){
-          $('.boxContainer').append(render(event));
+          $('.container').append(render(event));
         });
       },
 
@@ -77,7 +77,6 @@ $(function() {
       }
     });
   };
-  //somebody pls convert this function to jquery if you have time
 
   getNewEvents();
 });
