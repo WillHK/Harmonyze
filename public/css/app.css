@@ -21,4 +21,11 @@ a {
   height: 400px;
   margin: auto;
 }
+.eventful-small {
+  position: relative    !important;
+  width: 100px          !important;
+  font-size: 11px       !important;
+  line-height: 11px     !important;
+  text-align: center;
+}
 
