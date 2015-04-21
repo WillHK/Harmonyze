@@ -1,6 +1,6 @@
-
 'use strict'
 $(function() {
+  var pageCounter = 0;
   var User = function(userData) {
     this.userId = userData.id;
     this.userName = userData.name;
@@ -29,15 +29,19 @@ $(function() {
     this.date = eventData.date;
     this.artistName = eventData.artistName;
     this.artistImage = eventData.artistImage;
+
   };
   var eventList = [];
   var getNewEvents = function() {
+    pageCounter++;
+    var tempEventList = [];
+    console.log('getNewEvents called');
     $.ajax({
 
       method: 'GET',
 
       // The URL to make the request to.
-      url: 'http://api.eventful.com/json/events/search?location=Seattle&category=music&date=Future&image_sizes=small,medium,large&sort_order=date&sort_direction=ascending&page_number=10&page_size=20&app_key=tVX3L4p7bMfxKVRq',
+      url: 'http://api.eventful.com/json/events/search?location=Seattle&category=music&date=Future&image_sizes=medium&sort_order=date&sort_direction=ascending&page_number=' + pageCounter + '&page_size=20&app_key=tVX3L4p7bMfxKVRq',
 
 
       contentType: 'text/plain',
@@ -64,10 +68,11 @@ $(function() {
           if(event.image != null){
             if(event.start_time > "2015-04-19")
               eventList.push(new Event({"artistName": event.title, "place": event.venue_name, "date": event.start_time, "artistImage": event.image.medium || 1}));
+              tempEventList.push(new Event({"artistName": event.title, "place": event.venue_name, "date": event.start_time, "artistImage": event.image.medium || 1}));
           }
         });
         console.log(eventList);
-        eventList.forEach(function(event){
+        tempEventList.forEach(function(event){
           $('.container').append(render(event));
         });
       },
@@ -77,7 +82,7 @@ $(function() {
       }
     });
   };
-
+  $('#moreShows').click(getNewEvents);
   getNewEvents();
 });
 
