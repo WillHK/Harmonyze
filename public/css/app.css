@@ -2,12 +2,9 @@
 body {
   background-color: gray;
 }
-
-}
 h6 {
   color: white;
 }
-
 header {
   text-align: center;
 }
@@ -38,4 +35,6 @@ a {
   line-height: 11px     !important;
   text-align: center;
 }
+
+
 
