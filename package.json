@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/WillHK/Harmonyze",
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "normalize.css": "^3.0.3"
   }
 }
