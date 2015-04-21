@@ -1,0 +1,24 @@
+#container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#abod {
+  background-color: white;
+}
+#head {
+ text-align: center;
+ color: #31B2AB;
+}
+#tag {
+  text-align: center;
+}
+#expl {
+ text-align: center;
+ color: #31B2AB;
+ font-size:
+}
+#cre {
+  text-align: center;
+  color: #31B2AB ;
+}
