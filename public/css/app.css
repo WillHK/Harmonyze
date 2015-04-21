@@ -13,6 +13,8 @@ body {
   padding-bottom:60px;
   font-family: 'Nunito', sans-serif;
 }
+
+
 #main_header {
   top: 0;
   color: #31B2AB;
@@ -53,7 +55,8 @@ body {
 }
 a {
   text-decoration: none;
-  color: black;
+  color:#31B2AB;
+
 }
 .container {
   display: flex;
@@ -100,5 +103,12 @@ a {
 #about {
   color: #31B2AB     !important;
   float: right;
+}
+
+#formLink{
+  color:#31B2AB;
+}
+#formLink:hover{
+  text-decoration: underline;
 }
 
