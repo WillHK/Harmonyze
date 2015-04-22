@@ -1,11 +1,26 @@
 
+h1 {
+  margin: 0;
+  border: 0;
+  font-size: 4em;
+}
+article {
+  padding: 2em 2em 2em 2em;
+}
 body {
-  background-color: gray;
+  background-color: #D8EBF2;
   padding:10px;
   padding-bottom:60px;
+  font-family: 'Nunito', sans-serif;
 }
+
+
 #main_header {
   top: 0;
+  color: #31B2AB;
+  background-color: white;
+  border: 0;
+  margin: 0;
 }
 
 #footer {
@@ -14,16 +29,31 @@ body {
 }
 h6 {
   color: white;
+  font-size: 10em;
 }
 header {
   text-align: center;
 }
-footer {
+body {
+  margin: 0;
+}
+/*#footer {
+  text-align: bottom;
+}*/
+
+
+#lowerFooter {
   text-align: center;
+  /*background-color: #FFF;*/
+  bottom: 0;
+  margin: 0;
+  border: 0;
+
 }
 a {
   text-decoration: none;
-  color: black;
+  color:#31B2AB;
+
 }
 .container {
   display: flex;
@@ -31,13 +61,16 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 0px;
+
 }
 .events {
   /*background-color: black;*/
-  width: 256px;
-  height: 256px;
-  margin: auto;
+  width: 17em;
+  height: 17em;
+  margin-top: 2em;
   background-size: 100% 100% ;
+  box-shadow: 0px 0px 2px 2px #FFB995;
+  text-align: bottom;
 }
 .eventful-small {
   position: relative    !important;
@@ -45,6 +78,35 @@ a {
   font-size: 11px       !important;
   line-height: 11px     !important;
   text-align: center;
+}
+#moreShows{
+
+  width: 220px;
+  height: 50px;
+  cursor: pointer;
+  display: block;
+  margin: 2em auto;
+  background: #31B2AB no-repeat center center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+  border: 0;
+  padding: 15px 20px;
+  border-radius: 50px;
+  outline: 0;
+}
+
+#about {
+  color: #31B2AB     !important;
+  float: right;
+}
+
+#formLink{
+  color:#31B2AB;
+}
+#formLink:hover{
+  text-decoration: underline;
 }
 
 
