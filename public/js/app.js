@@ -1,5 +1,6 @@
 'use strict'
 $(function() {
+  var pageCounter = 0;
   var idCounter = 0;
   var pageCounter = 1;
   var tempEventList = 0;
@@ -64,10 +65,6 @@ $(function() {
                 console.log(artistId);
                 // console.log(getArtistImage(artistId));
               }
-
-              // var tempArtist = $.parseJSON(event.performance[0]);
-              // console.log(tempArtist);
-              // console.log(tempArtist[0]);
           if(event.performance.length > 0) {
             if (tempEventList.length < 4) {
               eventList.push(new Event({"artistName": event.performance[0].displayName, "place": event.venue.displayName, "date": event.start.date}));
@@ -80,35 +77,10 @@ $(function() {
 
       }
     });
-
-
-    //   success: function(res, req) {
-    //     console.log(res.events);
-    //     res.events.event.forEach(function(event){
-    //       if(event.image != null){
-    //         if(event.start_time > "2015-04-19") {
-    //           if (tempEventList.length < 4) {
-    //           eventList.push(new Event({"artistName": event.title, "place": event.venue_name, "date": event.start_time, "artistImage": event.image.medium || 1}));
-    //           tempEventList.push(new Event({"artistName": event.title, "place": event.venue_name, "date": event.start_time, "artistImage": event.image.medium || 1}));
-    //           }
-    //         }
-    //       }
-    //     });
-    //     if (tempEventList.length < 4) {
-    //       pageCounter++;
-    //       getNewEvents();
-    //     }
-    //     console.log(eventList);
-    //     tempEventList.forEach(function(event){
-    //       $('.container').append(render(event));
-    //     });
-    //   },
-
   pageCounter++;
   tempEventList = [];
   };
   $('#moreShows').click(getNewEvents);
-  debugger;
   getNewEvents();
 });
 
