@@ -5,7 +5,8 @@
   <title>Harmonyze</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="js/form.js"></script>
+   <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+  <script src="js/authentication.js"></script>
   <script src="js/user.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/user.css"></head>
@@ -14,6 +15,14 @@
   <header id="main_header">
     <h1>Harmonyze</h1>
     <a href="index.html"><h3>Find shows - Meet up - Get down</h3></a>
+    <aside id="loggedIn"><button id="logOut">Log Out</button></aside>
+    <aside id="loggedOut">
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="user_email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="user_password">
+    </aside>
   </header>
 
   <div class="top_elements">
