@@ -29,17 +29,33 @@ $(function() {
     }
     var gender = userData[6].value;
     var bio = userData[7].value;
-    var orientation = userData[8].value;
-    var picture = userData[9].value;
+    // var orientation = userData[8].value;
+    if (userData[8] === undefined||null) {
+      alert('looks like you forgot something!');
+      return false;
+    }
+      else {
+       var orientation = userData[9].value;
+    }
+    var picture = userData[8].value;
+    console.log(picture);
+    console.log(orientation)
     var genres = [];
     for (var i = 10; i< 18; i++) {
-      if (i !== null || undefined || 0) {
+      if (userData[i] !== null) {
         genres.push(userData[i]);
       }
     }
+    for (var i = 0; i < userData.length; i++) {
+      if (userData[i]===undefined || null) {
+        alert('it looks like you forgot something!');
+        return false;
+      }
+    }
   var user1 = new User(userId, userName,  email, password, age, gender, bio, orientation, picture, genres);
-  console.log(user1);
-  window.location.replace("index.html")
+   var userString = JSON.stringify(user1);
+  localStorage.setItem('user1', userString);
+  window.location.replace('user.html');
   })
 
 });
