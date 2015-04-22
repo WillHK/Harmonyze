@@ -1,5 +1,6 @@
 'use strict'
 $(function() {
+  var ref = new Firebase("https://fiery-torch-6266.firebaseio.com");
   var User = function(userId, userName,  email, password, age, gender, bio, orientation, picture, genres) {
     this.userId = userId;
     this.userName = userName;
@@ -52,10 +53,42 @@ $(function() {
         return false;
       }
     }
-  var user1 = new User(userId, userName,  email, password, age, gender, bio, orientation, picture, genres);
-   var userString = JSON.stringify(user1);
-  localStorage.setItem('user1', userString);
-  window.location.replace('user.html');
-  })
+      var user1 = new User(userId, userName,  email, password, age, gender, bio, orientation, picture, genres);
+    var usersRef = ref.child('users');
+    ref.createUser({
+    email       : user1.email,
+    password    : user1.password,
+  }, function(error, userData) {
+  if (error) {
+    console.log("Error creating user:", error);
+  } else {
+    console.log("Successfully created user account with uid:", userData.uid);
+    ref.authWithPassword({
+      email    : user1.email,
+      password : user1.password
+    }, function(error, authData) {
+      if (error) {
+      console.log("Login Failed!", error);
+      } else {
+        usersRef.push({
+    age         : user1.age,
+    gender      : user1.gender,
+    bio         : user1.bio,
+    orientation : user1.orientation,
+    picture     : user1.picture
+    });
+      console.log("Authenticated successfully with payload:", authData);
+      window.location.replace('user.html');
+      }
+    }, {
+      remember: "sessionOnly"
+  });
 
+  }
+  })
+  var userString = JSON.stringify(user1);
+  localStorage.setItem('user1', userString);
+
+
+});
 });
