@@ -1,7 +1,7 @@
 'use strict'
 $(function() {
   var idCounter = 0;
-  var pageCounter = 0;
+  var pageCounter = 1;
   var tempEventList = 0;
   var User = function(userData) {
     this.userId = userData.id;
@@ -34,13 +34,13 @@ $(function() {
     this.artistImage = eventData.artistImage;
   };
   var eventList = [];
-  var getArtistImage = function(artistId, tempEventList) {
+  var getArtistImage = function(artistId, event) {
     $.ajax({
       url: "http://developer.echonest.com/api/v4/artist/images?api_key=DWFSTTYD33CDIEJD2&format=jsonp&results=1&start=0&id=songkick:artist:" + artistId,
       dataType: "jsonp",
       success: function(data) {
-        tempEventList[tempEventList.length - 1].artistImage = data.response.images[0].url;
-        $('.container').append(render(tempEventList[tempEventList.length - 1]));
+        event.artistImage = data.response.images[0].url;
+        $('.container').append(render(event));
       },
       error: function(data, err){
         console.log(err);
@@ -57,7 +57,6 @@ $(function() {
       // data is JSON response object
 
         data.resultsPage.results.event.forEach(function(event){
-              // debugger;
               var artistId;
               if(event.performance.length > 0) {
                 // console.log(event.performance[0]);
@@ -71,48 +70,17 @@ $(function() {
               // console.log(tempArtist[0]);
           if(event.performance.length > 0) {
             if (tempEventList.length < 4) {
-            // eventList.push(new Event({"artistName": event.title, "place": event.venue_name, "date": event.start_time, "artistImage": event.image.medium || 1}));
+              eventList.push(new Event({"artistName": event.performance[0].displayName, "place": event.venue.displayName, "date": event.start.date}));
               tempEventList.push(new Event({"artistName": event.performance[0].displayName, "place": event.venue.displayName, "date": event.start.date}));
-              getArtistImage(artistId, tempEventList);
+              getArtistImage(artistId, tempEventList[tempEventList.length - 1]);
             }
           }
 
         });
-        // if (tempEventList.length < 4) {
-        //   pageCounter++;
-        //   getNewEvents();
-        // }
-        // console.log(eventList);
-        // tempEventList.forEach(function(event){
-        //   $(append(render(event));'.container').
-        // });
+
       }
     });
-    // $.ajax({
 
-    //   method: 'GET',
-
-    //   // The URL to make the request to.
-    //   url: 'http://api.eventful.com/json/events/search?location=Seattle&category=music&date=Future&image_sizes=medium&sort_order=date&sort_direction=ascending&page_number=' + pageCounter + '&page_size=10&app_key=tVX3L4p7bMfxKVRq',
-
-
-    //   contentType: 'text/plain',
-    //   dataType: 'jsonp',
-
-    //   crossDomain: 'true',
-
-    //   xhrFields: {
-
-    //     withCredentials: false
-    //   },
-
-    //   headers: {
-    //     // Set any custom headers here.
-    //     // If you set any non-simple headers, your server must include these
-    //     // headers in the 'Access-Control-Allow-Headers' response header.
-    //     "Access-Control-Allow-Headers": "Access-Control-Allow-Access",
-    //     "Access-Control-Allow-Access": "*"
-    //   },
 
     //   success: function(res, req) {
     //     console.log(res.events);
@@ -136,10 +104,6 @@ $(function() {
     //     });
     //   },
 
-    //   error: function(res, err) {
-    //     console.log("error: " + err + " " + res);
-    //   }
-    // });
   pageCounter++;
   tempEventList = [];
   };
