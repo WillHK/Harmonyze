@@ -6,7 +6,7 @@
         <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link rel="stylesheet" href="css/form.css">
-        <script src="js/app.js"></script>
+        <script src="js/form.js"></script>
     </head>
     <body>
 
@@ -18,6 +18,8 @@
           <legend><span class="number">1</span>Your basic info</legend>
           <label for="name">Name:</label>
           <input type="text" id="name" name="user_name">
+          <label for="Id">User ID:</label>
+          <input type="text" id="Id" name="user_Id">
 
           <label for="mail">Email:</label>
           <input type="email" id="mail" name="user_email">
@@ -25,19 +27,26 @@
           <label for="password">Password:</label>
           <input type="password" id="password" name="user_password">
 
-          <label>Age</label>
-          <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18" class="light">Under 18</label>
-          <input type="radio" id="over_18" value="over_18" name="user_age"><label for="over_18" class="light">Over 18</label><br>
-          <label>Sex</label>
-           <input type="radio" id="Male" value="Male" name="sex"><label for="Male" class="light">Male</label>
-          <input type="radio" id="Female" value="Female" name="sex"><label for="Female" class="light">Female</label>
-           <input type="radio" id="Other" value="Other" name="sex"><label for="Other" class="light">Other</label>
+          <!-- <label>Age</label> -->
+          <label for="age">Age:</label>
+          <input type="age" id="age" name="user_age"><br>
+          <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18" class="light">I am Under 18</label>
+          <input type="radio" id="over_18" value="over_18" name="over_age"><label for="over_18" class="light">I am Over 18</label>
+          <br>
+          <label>Gender</label>
+           <input type="radio" id="Male" value="Male" name="gender"><label for="Male" class="light">Male</label>
+          <input type="radio" id="Female" value="Female" name="gender"><label for="Female" class="light">Female</label>
+           <input type="radio" id="Other" value="Other" name="gender"><label for="Other" class="light">Other</label>
         </fieldset>
 
         <fieldset>
           <legend><span class="number">2</span>Your profile</legend>
           <label for="bio">Biography:</label>
-          <textarea id="bio" name="user_bio"></textarea>
+          <textarea id="bio" name="user_bio" placeholder="tell us a little about yourself!"></textarea>
+          <label for="picture">Picture:</label>
+          <input type="url" id="picture" placeholder="enter a url" name="picture">
+
+
         </fieldset>
         <fieldset>
         <label for="job">Interested in:</label>
@@ -48,17 +57,17 @@
         </select>
 
           <label>Favorite Genres:</label>
-          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Blues</label>
-          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Country</label>
-          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Electronic</label>
-          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Folk</label>
-          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Jazz</label>
-          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Pop</label><br>
-          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Rap/Hip-hop</label>
-          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Rythim & Blues</label>
+          <input type="checkbox" id="development" value="Blues" name="user_interest"><label class="light" for="development">Blues</label>
+          <input type="checkbox" id="design" value="Country" name="user_interest"><label class="light" for="design">Country</label>
+          <input type="checkbox" id="business" value="Electronic" name="user_interest"><label class="light" for="business">Electronic</label>
+          <input type="checkbox" id="business" value="Folk" name="user_interest"><label class="light" for="business">Folk</label>
+          <input type="checkbox" id="business" value="Jazz" name="user_interest"><label class="light" for="business">Jazz</label>
+          <input type="checkbox" id="business" value="Pop" name="user_interest"><label class="light" for="business">Pop</label><br>
+          <input type="checkbox" id="business" value="Rap/Hip-Hop" name="user_interest"><label class="light" for="business">Rap/Hip-hop</label>
+          <input type="checkbox" id="business" value="Rythm & Blues" name="user_interest"><label class="light" for="business">Rythim & Blues</label>
 
         </fieldset>
-        <button type="submit">Sign Up</button>
+        <button id ="submit" type="submit">Sign Up</button>
       </form>
 
     </body>

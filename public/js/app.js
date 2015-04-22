@@ -1,17 +1,7 @@
 'use strict'
 $(function() {
   var pageCounter = 0;
-  var User = function(userData) {
-    this.userId = userData.id;
-    this.userName = userData.name;
-    this.password = userData.password; //NO PLAINTEXT PASSWORDS. THIS IS BAD WHY AM I DOING THIS?
-    this.neighborhood = userData.neighborhood;
-    this.picture = userData.picture; //expects a URL to a picture
-    this.orientation = userData.orientation;
-    this.gender = userData.gender;
-    this.friends = []; //will be populated as user adds friends from site
-    this.pastEvents = []; //will be populated as user attends events
-  };
+
   var render = function(event) {
     var articleEl = document.createElement('article');
     articleEl.className = 'events';
