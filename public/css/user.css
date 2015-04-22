@@ -1,6 +1,20 @@
 
 * {box-sizing: border-box;}
 
+
+h1 {
+  margin: 0;
+  border: 0;
+  font-size: 4em;
+}
+#main_header {
+  top: 0;
+  color: #31B2AB;
+  background-color: white;
+  border: 0;
+  margin: 0;
+}
+
 #artist{
 
   text-align: center;
@@ -26,9 +40,12 @@
 
 body {
   padding: 20px;
+  background-color: #D8EBF2;
+  font-family: 'Nunito', sans-serif;
 }
 
 .button {
+  background-color: #FFF;
   position: relative;
 
   display: block;
