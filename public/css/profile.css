@@ -27,13 +27,22 @@ article {
   margin-left: 10%;
 }
 h1 {
+
+}
+
+.top_elements {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 0px;
   margin: 0;
   border: 0;
   font-size: 4em;
 }
 #form{
   text-align: center;
-
 }
 .top_elements:article {
   width: 300px;
