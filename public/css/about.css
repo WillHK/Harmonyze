@@ -12,10 +12,9 @@ h1 {
   font-size: 4em;
 }
 body {
-  padding: 20px;
+  padding: 0px;
   background-color: #D8EBF2;
   font-family: 'Nunito', sans-serif;
-  text-align: center;
 }
 p {
   padding-top: 50px;
@@ -36,27 +35,25 @@ p {
   margin: 0;
 }
 #menu {
-  width: 550px;
   height: 35px;
   font-size: 16px;
   color: #31B2AB;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   padding-top: 90px;
-  margin-left: 28%;
 }
 #menu ul {
-  /*height: auto;*/
-  /*padding: 8px 0px;
-  margin: 0px;*/
+  height: auto;
+  padding: 8px 0px;
+  margin: 0px;
 }
 #menu li {
   display: inline;
   padding: 20px;
 }
 #menu a {
-  /*text-decoration: none;
-  padding: 8px 8px 8px 8px;*/
+  text-decoration: none;
+  padding: 8px 8px 8px 8px;
 }
 #menu a:hover {
   color: #31B2AB;
@@ -91,6 +88,8 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 .eventful-badge {
   position: center      !important;

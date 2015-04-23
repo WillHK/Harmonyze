@@ -1,4 +1,12 @@
 
+#log {
+  display: flex;
+  flex-direction: right;
+  justify-content: left;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
 h1 {
   margin: 0;
   border: 0;
@@ -12,17 +20,15 @@ body {
   padding:10px;
   padding-bottom:60px;
   font-family: 'Nunito', sans-serif;
+  text-align: center;
 }
-
-
 #main_header {
   top: 0;
   color: #31B2AB;
-  background-color: white;
+  background-color: #f6f8f8;
   border: 0;
   margin: 0;
 }
-
 #footer {
     position:static;
     bottom:0;
@@ -38,23 +44,35 @@ header {
 body {
   margin: 0;
 }
-/*#footer {
-  text-align: bottom;
-}*/
-
-
-#lowerFooter {
-  text-align: center;
-  /*background-color: #FFF;*/
-  bottom: 0;
-  margin: 0;
-  border: 0;
-
+#menu {
+  height: 35px;
+  font-size: 16px;
+  color: #31B2AB;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  padding-top: 90px;
+}
+#menu ul {
+  height: auto;
+  padding: 8px 0px;
+  margin: 0px;
+}
+#menu li {
+  display: inline;
+  padding: 20px;
+}
+#menu a {
+  text-decoration: none;
+  padding: 8px 8px 8px 8px;
+}
+#menu a:hover {
+  color: #31B2AB;
+  text-decoration: underline;
+  background-color: #CEF0F2;
 }
 a {
   text-decoration: none;
   color:#31B2AB;
-
 }
 .container {
   display: flex;
@@ -62,10 +80,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 0px;
-
 }
 .events {
-  /*background-color: black;*/
   width: 12em;
   height: 12em;
   margin-top: 2em;
@@ -74,14 +90,14 @@ a {
   text-align: bottom;
 }
 .eventful-small {
-  position: relative    !important;
+  position: center      !important;
   width: 100px          !important;
   font-size: 11px       !important;
   line-height: 11px     !important;
-  text-align: center;
+  margin-left: 45% ;
+  padding-top: 120px;
 }
 #moreShows{
-
   width: 220px;
   height: 50px;
   cursor: pointer;
@@ -97,14 +113,17 @@ a {
   border-radius: 50px;
   outline: 0;
 }
-
 #about {
   color: #31B2AB     !important;
   float: right;
 }
-
 #formLink{
   color:#31B2AB;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 #formLink:hover{
   text-decoration: underline;
