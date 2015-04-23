@@ -6,6 +6,4 @@ var newUser = JSON.parse(newUserString);
 $('#userImg').append('<img src="' + newUser.picture + '"/>');
 $('#userImg').append('<p>' + newUser.userId + '</p>');
 
-
-
 });

@@ -97,6 +97,7 @@ img {
 }
 
 #main_header {
+  position: relative;
   top: 0;
   color: #31B2AB;
   background-color: white;
@@ -123,11 +124,19 @@ img {
  }
 
 #loggedIn {
-
+  position: absolute;
+ height: 80%;
+ width: 25%;
+ right: 0;
+ border: 1px black dotted;
 }
 
 #loggedOut {
-
+  position: absolute;
+ height: 80%;
+ width: 25%;
+ right: 0;
+ border: 1px black dotted;
 }
 
 
