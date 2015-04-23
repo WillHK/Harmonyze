@@ -11,24 +11,26 @@
   <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/user.css"></head>
 <body>
-
-  <header id="main_header">
-    <img id="log" src="css/logo.png">
-    <h1>Harmonyze</h1>
-    </header>
+    <header id="main_header">
+      <img id="logo" src="css/logo.png">
+      <h1>Harmonyze</h1>
+      <aside id="loggedIn">
+        <button id="logOut">Log Out</button>
+      </aside>
+      <aside id="loggedOut">
+      <form type="submit" id="loginform">
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="user_password"><br>
+        <button>Submit</button>
+        </form>
+        <a href="form.html">Sign Up</a>
+      </aside>
+      </header>
     <section id="logger">
     <a href="index.html"><h3>Find shows - Meet up - Get down</h3></a>
-    <aside id="loggedIn"><button id="logOut">Log Out</button></aside>
-    <aside id="loggedOut">
-    <form type="submit" id="loginform">
-      <label for="mail">Email:</label>
-      <input type="email" id="mail" name="user_email">
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="user_password">
-      <button>Submit</button>
-      </form>
-      <a href="form.html">Sign Up</a>
-    </aside>
+
     </section>
   <div class="top_elements">
       <article id="userImg">
@@ -48,11 +50,10 @@
     <article id="artist">
       <img id="artist_image" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQV-Tw1qDtenXYLpLTlhIn-KqKYwwu2AGFCRp4HlvKIIsxDq35Ag"/>
     </article>
-<<<<<<< HEAD
-=======
+
     <article id="userImg">
     </article>
->>>>>>> master
+
   </div>
   <h3>
     Other harmonyzers attending this show

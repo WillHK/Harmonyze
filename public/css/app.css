@@ -9,6 +9,7 @@
 }
 h1 {
   margin: 0;
+  margin-left: 1.75em;
   border: 0;
   font-size: 4em;
 }
@@ -24,11 +25,13 @@ body {
   text-align: center;
 }
 #main_header {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: no-wrap;
+ justify-content: space-between;
   top: 0;
   color: #31B2AB;
   background-color: #f6f8f8;
-  border: 0;
-  margin: 0;
 }
 #footer {
     position:static;
@@ -45,7 +48,6 @@ h6 {
 header {
   text-align: center;
   margin-top: 0em;
-  margin-bottom: 13em;
 }
 body {
   margin: 0;
@@ -138,6 +140,25 @@ a {
 }
 #formLink:hover{
   text-decoration: underline;
+}
+#loginform {
+  text-align: right;
+  display: block;
+}
+#loggedIn {
+
+ height: 80%;
+ width: 25%;
+ right: 0;
+}
+#loggedOut {
+ font-size: .7em;
+ text-align: right;
+ margin-right: .2em;
+}
+#logo {
+  width: 80px;
+  height: 80px;
 }
 
 
