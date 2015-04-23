@@ -5,6 +5,10 @@ body {
   padding: 20px;
   background-color: #D8EBF2;
   font-family: 'Nunito', sans-serif;
+  color: #31b2ab;
+}
+li {
+  color: black;
 }
 
 a {
@@ -113,7 +117,7 @@ img {
   height: 18.75em;
 }
 
-#userImg img{
+#userImg img {
   width: 18.75em;
   height: 18.75em;
   border-radius: 100%;
@@ -130,6 +134,11 @@ img {
 
 }
 
+#form {
+   text-align: center;
+   margin: 0 auto;
+   color: black;
+}
 
 
 

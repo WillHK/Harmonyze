@@ -1,6 +1,6 @@
 'use strict'
 $(function() {
-  var ref = new Firebase("https://fiery-torch-6266.firebaseio.com");
+  // var ref = new Firebase("https://fiery-torch-6266.firebaseio.com");
   var User = function(userId, userName,  email, password, age, gender, bio, orientation, picture, genres) {
     this.userId = userId;
     this.userName = userName;
@@ -60,7 +60,7 @@ $(function() {
     password    : user1.password,
   }, function(error, userData) {
   if (error) {
-    console.log("Error creating user:", error);
+    alert("Error creating user:", error);
   } else {
     console.log("Successfully created user account with uid:", userData.uid);
     ref.authWithPassword({
