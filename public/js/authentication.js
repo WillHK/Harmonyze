@@ -6,6 +6,22 @@ $(function() {
     $('#loggedIn').toggle();
     $('#loggedOut').toggle();
   };
+  $('#loginform').on('submit', function(event) {
+    event.preventDefault();
+    ref.authWithPassword({
+      email    : event.target.mail.value,
+      password : event.target.password.value
+    }, function(error, authData) {
+      if (error) {
+      console.log("Login Failed!", error);
+      } else {
+        console.log('logged in');
+        console.log(authData.uid);
+        $('#loggedIn').toggle();
+        $('#loggedOut').toggle();
+      }
+    });
+  });
   $('#loggedIn').toggle();
   $('#loggedOut').toggle();
   if (authData) {

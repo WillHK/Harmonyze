@@ -4,17 +4,6 @@ $(function() {
   var idCounter = 0;
   var pageCounter = 1;
   var tempEventList = 0;
-  var User = function(userData) {
-    this.userId = userData.id;
-    this.userName = userData.name;
-    this.password = userData.password; //NO PLAINTEXT PASSWORDS. THIS IS BAD WHY AM I DOING THIS?
-    this.neighborhood = userData.neighborhood;
-    this.picture = userData.picture; //expects a URL to a picture
-    this.orientation = userData.orientation;
-    this.gender = userData.gender;
-    this.friends = []; //will be populated as user adds friends from site
-    this.pastEvents = []; //will be populated as user attends events
-  };
   var render = function(event) {
     var articleEl = document.createElement('article');
     articleEl.className = 'events';
@@ -40,8 +29,10 @@ $(function() {
       url: "http://developer.echonest.com/api/v4/artist/images?api_key=DWFSTTYD33CDIEJD2&format=jsonp&results=1&start=0&id=songkick:artist:" + artistId,
       dataType: "jsonp",
       success: function(data) {
-        event.artistImage = data.response.images[0].url;
-        $('.container').append(render(event));
+        if(data.response.images.length > 0){
+          event.artistImage = data.response.images[0].url;
+          $('.container').append(render(event));
+        }
       },
       error: function(data, err){
         console.log(err);
@@ -60,10 +51,7 @@ $(function() {
         data.resultsPage.results.event.forEach(function(event){
               var artistId;
               if(event.performance.length > 0) {
-                // console.log(event.performance[0]);
                 artistId = event.performance[0].artist.id;
-                console.log(artistId);
-                // console.log(getArtistImage(artistId));
               }
           if(event.performance.length > 0) {
             if (tempEventList.length < 4) {

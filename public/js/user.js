@@ -14,5 +14,4 @@ $('#comment_form').on('submit', function (event){
 });
 
 
-
 });

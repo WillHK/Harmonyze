@@ -70,7 +70,9 @@ $(function() {
       if (error) {
       console.log("Login Failed!", error);
       } else {
+        authData = ref.getAuth();
         usersRef.push({
+    uid         : authData.uid,
     age         : user1.age,
     gender      : user1.gender,
     bio         : user1.bio,
