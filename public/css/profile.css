@@ -30,6 +30,7 @@ h1 {
 
 }
 
+
 .top_elements {
   background-color: white;
   display: flex;
@@ -39,7 +40,7 @@ h1 {
   margin-left: 0px;
   margin: 0;
   border: 0;
-  font-size: 4em;
+  /*s*/
 }
 #form{
   text-align: center;
@@ -84,7 +85,7 @@ h1 {
  #bio:p{
   margin-left: 10%;
  }
- .top_elements {
+/* .head_flexbox {
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -92,3 +93,4 @@ h1 {
   justify-content: flex-start;
   margin-left: 0px;
 }
+*/
