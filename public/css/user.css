@@ -1,4 +1,10 @@
 * {box-sizing: border-box;}
+
+aside {
+  border: none;
+  margin-left: 0;
+}
+
 body {
   padding: 10px;
   background-color: #D8EBF2;
@@ -8,13 +14,9 @@ body {
 li {
   color: black;
 }
-#log {
-  display: flex;
-  flex-direction: right;
-  justify-content: left;
+#logo {
   width: 80px;
   height: 80px;
-  position: absolute;
 }
 a {
   color: #31b2ab;
@@ -25,6 +27,7 @@ a:hover {
 }
 h1 {
   margin: 0;
+  margin-left: 1.75em;
   border: 0;
   font-size: 4em;
 }
@@ -63,17 +66,12 @@ img {
   }
 }
 .events {
-  /*background-color: black;*/
   width: 200px;
   height: 200px;
   margin: auto;
 }
-/*.events:first-child {
-  width: 200px;
-  height: 200px;
-}*/
+
 .events {
-  /*background-color: black;*/
   width: 300px;
   height: 400px;
   margin: auto;
@@ -92,6 +90,7 @@ img {
   justify-content: space-between;
   margin-left: 0px;
 }
+
 .top_elements {
   display: flex;
   flex-direction: row;
@@ -100,12 +99,13 @@ img {
   margin-left: 0px;
 }
 #main_header {
-  position: relative;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: no-wrap;
+ justify-content: space-between;
   top: 0;
   color: #31B2AB;
   background-color: #f6f8f8;
-  border: 0;
-  margin: 0;
 }
 #artist{
   text-align: center;
@@ -125,26 +125,26 @@ img {
  }
 
 #loggedIn {
-  position: absolute;
+
  height: 80%;
  width: 25%;
  right: 0;
- border: 1px black dotted;
 }
 
 #loggedOut {
-  position: absolute;
- height: 80%;
- width: 25%;
- right: 0;
- border: 1px black dotted;
+ font-size: .7em;
+ text-align: right;
+ margin-right: .2em;
 }
-
 
 #form {
    text-align: center;
-   margin: 0 auto;
+   /*margin: 0 auto;*/
    color: black;
+}
+#loginform {
+  text-align: right;
+  display: block;
 }
 
 
