@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <nav id="nav">
-  <img id="log" src="css/logo.png">
-  <div id="menu">
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">About Us</a></li>
-      <li><a href="">Harmonyze</a></li>
-    </ul>
-  </div>
-  </nav>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link href="css/about.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/about.css">
   <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="css/about.css">
-  <h1 id="head">Harmonyze</h1>
 </head>
-<body id="abod">
-  <h1 id="head">Harmonyze</h1>
-  <h2 id="tag">Find Concerts - Meet People - Get Down</h2>
-  <p id="expl">Use Harmonyze to find concerts you want to attend, meet people who are attending those shows, and get down together while you listen to your favorite bands with your new favorite person.</p>
-  <br/>
-  <p id="cre">Harmonyze was created by Codefellows Foundations Bootcamp students</p>
-  <div id="responsive-container">
-  <img src="css/will.png" class="lef">
-  <img src="css/nathan.png" class="mid">
-  <img src="css/dylan.png" class="rig">
+<body>
+  <header id="main_header">
+    <img id="log" src="css/logo.png">
+    <h1>Harmonyze</h1>
+  </header>
+  <section class="container-text responsive-container flex" id="text">
+    <h3>Find shows - Meet up - Get down</h3>
+    <p>Use Harmonyze to find concerts you want to attend, meet people who are attending those shows, and get down together while you listen to your favorite bands with your new favorite person
+    </p>
+    <p id="cre">Harmonyze was created by Codefellows Foundations Bootcamp students</p>
+  </section>
+  <div class="responsive-container flex">
+    <img src="css/will.png" id="lef">
+    <img src="css/nathan.png" id="mid">
+    <img src="css/dylan.png" id="rig">
   </div>
+<footer>
+  <nav id="menu">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="form.html">Harmonyze</a></li>
+        </ul>
+  </nav>
+  <div class="eventful-badge">
+  <img src="http://api.eventful.com/images/powered/eventful_58x20.gif"
+    alt="Local Events, Concerts, Tickets">
+  <p><a href="http://eventful.com/">Events</a> by Eventful</p>
+</div>
+</footer>
 </body>
 </html>
+
+
