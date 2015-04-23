@@ -1,13 +1,18 @@
 * {box-sizing: border-box;}
-
-
 body {
-  padding: 20px;
+  padding: 10px;
   background-color: #D8EBF2;
   font-family: 'Nunito', sans-serif;
   color: #31B2AB;
 }
-
+#log {
+  display: flex;
+  flex-direction: right;
+  justify-content: left;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
 header{
   text-align: center;
 }
@@ -32,7 +37,12 @@ h1 {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-left: 0px;
-
+  margin: 0;
+  border: 0;
+  font-size: 4em;
+}
+#form{
+  text-align: center;
 }
 .top_elements:article {
   width: 300px;
@@ -43,9 +53,10 @@ h1 {
 #main_header {
   top: 0;
   color: #31B2AB;
-  background-color: white;
+  background-color: #f6f8f8;
   border: 0;
   margin: 0;
+  height: 80px;
 }
 #artist{
 
@@ -73,3 +84,11 @@ h1 {
  #bio:p{
   margin-left: 10%;
  }
+ .top_elements {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 0px;
+}
