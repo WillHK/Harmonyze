@@ -146,10 +146,11 @@ a {
   display: block;
 }
 #loggedIn {
-
- height: 80%;
+width: 11.8em;
+text-align: right;
+/* height: 80%;
  width: 25%;
- right: 0;
+ right: 0;*/
 }
 #loggedOut {
  font-size: .7em;
