@@ -1,0 +1,94 @@
+* {box-sizing: border-box;}
+body {
+  padding: 10px;
+  background-color: #D8EBF2;
+  font-family: 'Nunito', sans-serif;
+  color: #31B2AB;
+}
+#log {
+  display: flex;
+  flex-direction: right;
+  justify-content: left;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+header{
+  text-align: center;
+}
+a {
+  color: #31b2ab;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+article {
+  margin-left: 10%;
+}
+h1 {
+
+}
+
+.top_elements {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 0px;
+  margin: 0;
+  border: 0;
+  font-size: 4em;
+}
+#form{
+  text-align: center;
+}
+.top_elements:article {
+  width: 300px;
+  height: 300px;
+  margin-left: 10%;
+
+}
+#main_header {
+  top: 0;
+  color: #31B2AB;
+  background-color: #f6f8f8;
+  border: 0;
+  margin: 0;
+  height: 80px;
+}
+#artist{
+
+  text-align: center;
+}
+#userImg {
+  margin-left: 10%;
+}
+#userImg img{
+  width: 15em;
+  height: 15em;
+  border-radius: 100%;
+  margin-left
+}
+ #userImg p {
+  margin: 0em 0em 0em 5.8em;
+  width: 2.5em;
+  height: 2em;
+ }
+
+ #bio: {
+  width: 60%;
+  margin-left: 10%;
+ }
+ #bio:p{
+  margin-left: 10%;
+ }
+ .top_elements {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 0px;
+}

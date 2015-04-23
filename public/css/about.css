@@ -1,12 +1,49 @@
-
+a {
+  text-decoration: none;
+  color: #31B2AB;
+}
+a:hover {
+  text-decoration: underline;
+}
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  border: 0;
+  font-size: 4em;
+}
+body {
+  padding: 0px;
+  background-color: #D8EBF2;
+  font-family: 'Nunito', sans-serif;
+}
+p {
+  padding-top: 50px;
+}
+#log {
+  display: flex;
+  flex-direction: right;
+  justify-content: left;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+#main_header {
+  top: 0;
+  color: #31B2AB;
+  background-color: #f6f8f8;
+  border: 0;
+  margin: 0;
+}
 #menu {
-  width: 550px;
   height: 35px;
   font-size: 16px;
   color: #31B2AB;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
-  text-align: center;
+  padding-top: 90px;
 }
 #menu ul {
   height: auto;
@@ -19,45 +56,51 @@
 }
 #menu a {
   text-decoration: none;
-  color: #00F;
   padding: 8px 8px 8px 8px;
 }
 #menu a:hover {
   color: #31B2AB;
-  background-color: #FFF;
+  text-decoration: underline;
+  background-color: #CEF0F2;
 }
-#log {
-  width: 80px;
-  height: 80px;
-}
-#abod {
-  background-color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Nunito', sans-serif;
-  color: #31B2AB;
-}
-#head {
- text-align: center;
+.container-text {
  color: #31B2AB;
-}
-#tag {
-  text-align: center;
-}
-#expl {
- text-align: center;
- color: #31B2AB;
- font-size:
 }
 #cre {
-  text-align: center;
   color: #31B2AB ;
+  padding-top: 60px;
 }
-#responsive-container {
+#lef {
+  height: 14em;
+  width: 12em;
+}
+#mid {
+  height: 14em;
+  width: 12em;
+}
+#rig {
+  height: 14em;
+  width: 12em;
+}
+.flex {
+  display: flex-box;
+}
+.responsive-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-
+  justify-content: center;
+  align-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
 }
+.eventful-badge {
+  position: center      !important;
+  width: 100px          !important;
+  font-size: 11px       !important;
+  line-height: 11px     !important;
+  margin-left: 45% ;
+  padding-top: 120px;
+}
+
+

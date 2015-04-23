@@ -1,12 +1,21 @@
-
 * {box-sizing: border-box;}
-
 body {
-  padding: 20px;
+  padding: 10px;
   background-color: #D8EBF2;
   font-family: 'Nunito', sans-serif;
+  color: #31b2ab;
 }
-
+li {
+  color: black;
+}
+#log {
+  display: flex;
+  flex-direction: right;
+  justify-content: left;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
 a {
   color: #31b2ab;
   text-decoration: none;
@@ -14,44 +23,42 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
 h1 {
   margin: 0;
   border: 0;
   font-size: 4em;
 }
-header{
+header {
   text-align: center;
+}
+section {
+  text-align: center;
+}
+h3 {
+    font-size: 1.17em;
 }
 footer {
   text-align: center;
 }
 img {
-
 }
 .button {
   background-color: #FFF;
   position: relative;
-
   display: block;
   width: 75%;
   margin: 100px auto;
   padding: 20px 20px;
-
   border-radius: 50px;
   box-shadow: 0 5px 0 0 #e9edee, 0 5px 0 2px #ccd2d2, 0 12px 20px 6px #d5dbdb;
-
   text-align: center;
   color: #31B2AB;
   text-decoration: none;
   font-weight: bold;
   font-size: 24px;
-
   -webkit-tap-highlight-color: rgba(black, 0);
-
   &:active {
     top: 5px;
-
     box-shadow: 0 1px 0 2px #ccd2d2, 0 7px 20px 6px #d5dbdb;
   }
 }
@@ -61,12 +68,10 @@ img {
   height: 200px;
   margin: auto;
 }
-
-.events:first-child {
+/*.events:first-child {
   width: 200px;
   height: 200px;
-}
-
+}*/
 .events {
   /*background-color: black;*/
   width: 300px;
@@ -93,20 +98,16 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 0px;
-
 }
-
 #main_header {
   position: relative;
   top: 0;
   color: #31B2AB;
-  background-color: white;
+  background-color: #f6f8f8;
   border: 0;
   margin: 0;
 }
-
 #artist{
-
   text-align: center;
 }
 #artist_image {
@@ -139,6 +140,12 @@ img {
  border: 1px black dotted;
 }
 
+
+#form {
+   text-align: center;
+   margin: 0 auto;
+   color: black;
+}
 
 
 
