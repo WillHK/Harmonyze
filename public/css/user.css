@@ -20,7 +20,7 @@ h1 {
   border: 0;
   font-size: 4em;
 }
-header{
+header {
   text-align: center;
 }
 footer {
@@ -62,10 +62,10 @@ img {
   margin: auto;
 }
 
-.events:first-child {
+/*.events:first-child {
   width: 200px;
   height: 200px;
-}
+}*/
 
 .events {
   /*background-color: black;*/
