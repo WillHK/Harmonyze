@@ -2,6 +2,9 @@ a {
   text-decoration: none;
   color: #31B2AB;
 }
+a:hover {
+  text-decoration: underline;
+}
 * {
   box-sizing: border-box;
   text-align: center;
