@@ -14,9 +14,11 @@ $(function() {
     var footerEl = document.createElement('footer');
     $(footerEl).html('<h6>' + event.place + '</h6');
     articleEl.appendChild(footerEl);
+    articleEl.id = event.eventId;
     return articleEl;
   }
   var Event = function(eventData) {
+    this.eventId = eventData.id;
     this.title = eventData.title;
     this.place = eventData.place;
     this.date = eventData.date;
@@ -29,9 +31,14 @@ $(function() {
       url: "http://developer.echonest.com/api/v4/artist/images?api_key=DWFSTTYD33CDIEJD2&format=jsonp&results=1&start=0&id=songkick:artist:" + artistId,
       dataType: "jsonp",
       success: function(data) {
-        if(data.response.images.length > 0){
+        if(data.response.images){
           event.artistImage = data.response.images[0].url;
           $('.container').append(render(event));
+          $('.events').on('click', function() {
+            var eventJSON = JSON.stringify(event);
+            localStorage.setItem(this.id, eventJSON);
+            window.location.replace('user.html?ID=' + this.id);
+            });
         }
       },
       error: function(data, err){
@@ -55,8 +62,8 @@ $(function() {
               }
           if(event.performance.length > 0) {
             if (tempEventList.length < 4) {
-              eventList.push(new Event({"artistName": event.performance[0].displayName, "place": event.venue.displayName, "date": event.start.date}));
-              tempEventList.push(new Event({"artistName": event.performance[0].displayName, "place": event.venue.displayName, "date": event.start.date}));
+              eventList.push(new Event({"artistName": event.performance[0].displayName, "place": event.venue.displayName, "date": event.start.date, "id": event.id}));
+              tempEventList.push(new Event({"artistName": event.performance[0].displayName, "place": event.venue.displayName, "date": event.start.date, "id": event.id}));
               getArtistImage(artistId, tempEventList[tempEventList.length - 1]);
             }
           }
