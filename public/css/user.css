@@ -100,6 +100,7 @@ img {
   margin-left: 0px;
 }
 #main_header {
+  position: relative;
   top: 0;
   color: #31B2AB;
   background-color: #f6f8f8;
@@ -121,6 +122,22 @@ img {
 }
  #userImg p {
   margin: 0 0 0 8em;
+ }
+
+#loggedIn {
+  position: absolute;
+ height: 80%;
+ width: 25%;
+ right: 0;
+ border: 1px black dotted;
+}
+
+#loggedOut {
+  position: absolute;
+ height: 80%;
+ width: 25%;
+ right: 0;
+ border: 1px black dotted;
 }
 
 
