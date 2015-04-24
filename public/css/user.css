@@ -1,4 +1,12 @@
-* {box-sizing: border-box;}
+* {box-sizing: border-box};
+span {
+  left: 0;
+}
+ul {
+  list-style-type: none;
+/*  background: white;
+  width: 50%;*/
+}
 
 aside {
   border: none;
@@ -185,4 +193,9 @@ text-align: right;
   background-color: #CEF0F2;
 }
 
+#comment_section {
+  margin-left: 41%;
+  text-align: center;
+  color: black;
+}
 
