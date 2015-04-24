@@ -12,7 +12,7 @@ $(function() {
     $(articleEl).css('background-image', 'url(' + event.artistImage + ')');
     articleEl.appendChild(headerEl);
     var footerEl = document.createElement('footer');
-    $(footerEl).html('<h6>' + event.place + '</h6');
+    $(footerEl).html('<h6>' + event.place + '</h6>');
     articleEl.appendChild(footerEl);
     articleEl.id = event.eventId;
     return articleEl;
@@ -49,7 +49,7 @@ $(function() {
   };
   var getNewEvents = function() {
     $.ajax({
-      url: "http://api.songkick.com/api/3.0/metro_areas/2846/calendar.json?apikey=vHjNp7OK5HaRjOho&jsoncallback=?&per_page=5&page=" + pageCounter,
+      url: "http://api.songkick.com/api/3.0/metro_areas/2846/calendar.json?apikey=vHjNp7OK5HaRjOho&jsoncallback=?&per_page=8&page=" + pageCounter,
       dataType: "jsonp",
       async: false,
       success: function(data){
@@ -57,13 +57,14 @@ $(function() {
 
         data.resultsPage.results.event.forEach(function(event){
               var artistId;
+              console.log(event);
               if(event.performance.length > 0) {
                 artistId = event.performance[0].artist.id;
               }
           if(event.performance.length > 0) {
-            if (tempEventList.length < 4) {
-              eventList.push(new Event({"artistName": event.performance[0].displayName, "place": event.venue.displayName, "date": event.start.date, "id": event.id}));
-              tempEventList.push(new Event({"artistName": event.performance[0].displayName, "place": event.venue.displayName, "date": event.start.date, "id": event.id}));
+            if (tempEventList.length < 8) {
+              eventList.push(new Event({"artistName": event.performance[0].displayName, "place": event.venue.displayName, "date": event.start.date, "id": event.id, "title": event.displayName}));
+              tempEventList.push(new Event({"artistName": event.performance[0].displayName, "place": event.venue.displayName, "date": event.start.date, "id": event.id, "title": event.displayName}));
               getArtistImage(artistId, tempEventList[tempEventList.length - 1]);
             }
           }

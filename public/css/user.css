@@ -8,17 +8,13 @@ ul {
   width: 50%;*/
 }
 
-
 aside {
   border: none;
   margin-left: 0;
 }
-h3 {
-  text-decoration: underline;
-}
 
 body {
-  padding: .625em;
+  padding: 10px;
   background-color: #D8EBF2;
   font-family: 'Nunito', sans-serif;
   color: #31b2ab;
@@ -27,8 +23,8 @@ li {
   color: black;
 }
 #logo {
-  width: 5em;
-  height: 5em;
+  width: 80px;
+  height: 80px;
 }
 a {
   color: #31b2ab;
@@ -77,19 +73,24 @@ img {
     box-shadow: 0 1px 0 2px #ccd2d2, 0 7px 20px 6px #d5dbdb;
   }
 }
+.events {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
 
 .events {
-  width: 18.75em;
-  height: 25em;
+  width: 300px;
+  height: 400px;
   margin: auto;
 }
 .eventful-small {
   position: center      !important;
-  width: 6.25em          !important;
-  font-size: .688em       !important;
-  line-height: .688em     !important;
+  width: 100px          !important;
+  font-size: 11px       !important;
+  line-height: 11px     !important;
   margin-left: 0 ;
-  padding-top: 7.25em;
+  padding-top: 120px;
 }
 .container {
   display: flex;
@@ -97,16 +98,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 0px;
-}
-.container img {
-  border-radius: 100%;
-  height: 12.5em;
-  width: 12.5em;
-}
-.container img:hover {
-  box-shadow: 0px 0px .375em .375em #1B9d97;
-  cursor: pointer;
-
 }
 
 .top_elements {
@@ -126,27 +117,22 @@ img {
   background-color: #f6f8f8;
 }
 #artist{
-
   text-align: center;
 }
-
+#artist_image {
+  width: 25em;
+  height: 18.75em;
+}
 
 #userImg img{
   width: 18.75em;
   height: 18.75em;
   border-radius: 100%;
 }
-#eventInfo {
-  width: 30%;
-}
-#artist img {
-  width: 18.75em;
-  height: 18.75em;
-  border-radius: 20%;
-}
  #userImg p {
   margin: 0 0 0 8em;
  }
+
 #loggedIn {
 width: 11.8em;
 text-align: right;
@@ -179,18 +165,18 @@ text-align: right;
   justify-content: space-between;
 }
 #menu {
-  height: 2.188em;
-  font-size: 1em;
+  height: 35px;
+  font-size: 16px;
   color: #31B2AB;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
-  padding-top: 5.625em;
+  padding-top: 90px;
   margin-right: 34.3%;
 
 }
 #menu ul {
   height: auto;
-  padding: 1.25em 0px;
+  padding: 8px 0px;
   margin: 0px;
 }
 #menu li {
@@ -199,7 +185,7 @@ text-align: right;
 }
 #menu a {
   text-decoration: none;
-  padding: 1.25em 1.25em 1.25em 1.25em;
+  padding: 8px 8px 8px 8px;
 }
 #menu a:hover {
   color: #31B2AB;
