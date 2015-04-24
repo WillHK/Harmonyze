@@ -23,12 +23,46 @@ body {
   font-family: 'Nunito', sans-serif;
   color: #31b2ab;
 }
+#menu {
+  height: 35px;
+  font-size: 16px;
+  color: #31B2AB;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  padding-top: 90px;
+  margin-left: 33%;
+
+}
+#menu ul {
+  height: auto;
+  padding: 8px 0px;
+  margin: 0px;
+}
+#menu li {
+  display: inline;
+  padding: 20px;
+}
+#menu a {
+  text-decoration: none;
+  padding: 8px 8px 8px 8px;
+}
+#menu a:hover {
+  color: #31B2AB;
+  text-decoration: underline;
+  background-color: #CEF0F2;
+}
 li {
   color: black;
 }
 #logo {
   width: 5em;
   height: 5em;
+}
+#lowerFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
 }
 a {
   color: #31b2ab;
