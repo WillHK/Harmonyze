@@ -1,4 +1,8 @@
 
+a,
+a label {
+  cursor: pointer;
+}
 #log {
   display: flex;
   flex-direction: right;
@@ -39,6 +43,7 @@ body {
 }
 h6 {
   margin: 0;
+  margin-bottom: 13em;
   color: white;
   font-size: 1em;
   text-align: center;
@@ -59,6 +64,8 @@ body {
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   padding-top: 90px;
+  margin-right: 34.3%;
+
 }
 #menu ul {
   height: auto;
@@ -87,7 +94,8 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 0px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 .events {
   /*background-color: black;*/
@@ -100,14 +108,19 @@ a {
 
 }
 .events:hover {
+<<<<<<< HEAD
   box-shadow: 0px 0px 6px 6px #1B9D97;
+=======
+  box-shadow: 0px 0px 6px 6px #FFB995;
+  cursor: pointer;
+>>>>>>> master
 }
 .eventful-small {
   position: center      !important;
   width: 100px          !important;
   font-size: 11px       !important;
   line-height: 11px     !important;
-  margin-left: 45% ;
+  margin-left: 0 ;
   padding-top: 120px;
 }
 #moreShows{
@@ -146,10 +159,12 @@ a {
   display: block;
 }
 #loggedIn {
-
- height: 80%;
+width: 11.8em;
+text-align: right;
+display: inline-block;
+/* height: 80%;
  width: 25%;
- right: 0;
+ right: 0;*/
 }
 #loggedOut {
  font-size: .7em;
@@ -160,6 +175,13 @@ a {
   width: 80px;
   height: 80px;
 }
-
-
+#lowerFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+}
+#profile {
+  font-size: .7em;
+}
 

@@ -1,6 +1,6 @@
 'use strict'
 $(function() {
-  // var ref = new Firebase("https://fiery-torch-6266.firebaseio.com");
+   var ref = new Firebase("https://fiery-torch-6266.firebaseio.com");
   var User = function(userId, userName,  email, password, age, gender, bio, orientation, picture, genres) {
     this.userId = userId;
     this.userName = userName;
@@ -80,7 +80,7 @@ $(function() {
     picture     : user1.picture
     });
       console.log("Authenticated successfully with payload:", authData);
-      window.location.replace('user.html');
+      window.location.replace('profile.html');
       }
     }, {
       remember: "sessionOnly"

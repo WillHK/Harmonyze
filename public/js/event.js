@@ -11,9 +11,13 @@ $('#userImg').append('<p>' + newUser.userId + '</p>');
 
 $('#comment_form').on('submit', function (event){
   event.preventDefault();
+
   var formData = $(this).serializeArray();
   var comment = formData[0].value;
-  $('#comments').append('<li>' + newUser.userId + " - " + comment + '</li');
+  if(comment === "" || null || undefined){
+    return false;
+  }
+  $('#comments').append('<li><b>' + newUser.userId + "</b>" + " - " + comment + '</li></span>');
 });
 
 
