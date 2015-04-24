@@ -44,6 +44,7 @@ p {
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   padding-top: 90px;
+  margin-right: 3%;
 }
 #menu ul {
   height: auto;
@@ -94,7 +95,7 @@ p {
   margin-left: 25%;
   margin-right: 25%;
 }
-.eventful-badge {
+/*.eventful-badge {
   position: center      !important;
   width: 100px          !important;
   font-size: 11px       !important;
@@ -102,5 +103,5 @@ p {
   margin-left: 45% ;
   padding-top: 120px;
 }
-
+*/
 
