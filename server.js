@@ -6,7 +6,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 app.get('/*', function(res,req) {
-  res.status(404).send('<h1>Page not found</h1>');
+  res.status(404).send('404.html');
 });
 
 app.listen(process.env.PORT || 5000, function() {
