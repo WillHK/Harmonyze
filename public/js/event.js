@@ -1,11 +1,14 @@
 'include strict'
 $(function (){
 var eventId = /([0-9])\w+/.exec(window.location.search)[0];
-var eventObj = localStorage.getItem(eventId);
+var eventObj = JSON.parse(localStorage.getItem(eventId));
 console.log(eventObj);
 var newUserString = localStorage.getItem('user1');
 var newUser = JSON.parse(newUserString);
-
+console.log(eventObj.artistImage);
+$('#eventInfo').append('<h2> ' + eventObj.artistName);
+$('#artist').append('<a href="profile.html"><img src="' + eventObj.artistImage + '"/></a>');
+$('#eventInfo').append('<p> ' + eventObj.title + ' </p>');
 $('#userImg').append('<a href ="profile.html"><img src="' + newUser.picture + '"/></a>');
 $('#userImg').append('<p>' + newUser.userId + '</p>');
 
