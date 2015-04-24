@@ -11,10 +11,23 @@
   <link rel="stylesheet" type="text/css" href="css/profile.css"></head>
 <body>
   <header id="main_header">
-    <img id="log" src="css/logo.png">
-    <a href="index.html"><h1>Harmonyze</h1></a>
-  </header>
-  <a href="index.html"><h3 id="form">Find shows - Meet up - Get down</h3></a>
+      <img id="logo" src="css/logo.png">
+      <a href="index.html"><h1>Harmonyze</h1></a>
+      <aside id="loggedIn">
+        <button id="logOut">Log Out</button>
+      </aside>
+      <!-- <aside id="loggedOut">
+      <form type="submit" id="loginform">
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="user_password"><br>
+        <button>Submit</button>
+        </form>
+        <a href="form.html">Sign Up</a>
+      </aside> -->
+      </header>
+  <h3 id="form">Find shows - Meet up - Get down</h3>
     <div class="top_elements">
       <article id="userImg">
       </article>
@@ -33,12 +46,21 @@
         <h3>Bio:</h3>
       </article>
     </div>
-  <footer>
+<footer id="lowerFooter">
     <div class="eventful-badge eventful-small">
-  <img src="http://api.eventful.com/images/powered/eventful_58x20.gif"
+    <a href="http://eventful.com/">
+    <img src="http://api.eventful.com/images/powered/eventful_58x20.gif"
     alt="Local Events, Concerts, Tickets">
-  <p><a href="http://eventful.com/">Events</a> by Eventful</p>
-</div>
-</footer>
+    Events
+    <p>by Eventful</p> </a>
+    </div>
+    <nav id="menu">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="form.html">Harmonyze</a></li>
+        </ul>
+  </nav>
+  </footer>
 </body>
 </html>
