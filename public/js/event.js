@@ -1,5 +1,8 @@
 'include strict'
 $(function (){
+var eventId = /([0-9])\w+/.exec(window.location.search)[0];
+var eventObj = localStorage.getItem(eventId);
+console.log(eventObj);
 var newUserString = localStorage.getItem('user1');
 var newUser = JSON.parse(newUserString);
 
