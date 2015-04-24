@@ -108,12 +108,10 @@ a {
 
 }
 .events:hover {
-<<<<<<< HEAD
+
   box-shadow: 0px 0px 6px 6px #1B9D97;
-=======
-  box-shadow: 0px 0px 6px 6px #FFB995;
   cursor: pointer;
->>>>>>> master
+
 }
 .eventful-small {
   position: center      !important;
