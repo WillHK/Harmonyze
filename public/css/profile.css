@@ -86,11 +86,13 @@ h1 {
  }
 
  #bio: {
-  width: 60%;
+  width: 20%;
   margin-left: 10%;
+
  }
- #bio:p{
-  margin-left: 10%;
+ #bio p{
+  margin-left: 0%;
+  width: 40%;
  }
 
 #loggedIn {
