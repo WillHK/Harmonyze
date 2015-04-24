@@ -5,32 +5,53 @@
   <title>Harmonyze</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="js/form.js"></script>
-  <script src="js/profile.js"></script>
+
   <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/profile.css"></head>
 <body>
   <header id="main_header">
-    <img id="log" src="css/logo.png">
-    <a href="index.html"><h1>Harmonyze</h1></a>
-  </header>
-  <a href="index.html"><h3 id="form">Find shows - Meet up - Get down</h3></a>
+      <img id="logo" src="css/logo.png">
+      <a href="index.html"><h1>Harmonyze</h1></a>
+      <aside id="loggedIn">
+        <button id="logOut">Log Out</button>
+      </aside>
+      <!-- <aside id="loggedOut">
+      <form type="submit" id="loginform">
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="user_password"><br>
+        <button>Submit</button>
+        </form>
+        <a href="form.html">Sign Up</a>
+      </aside> -->
+      </header>
+  <h3 id="form">Find shows - Meet up - Get down</h3>
     <div class="top_elements">
       <article id="userImg">
+        <img src="https://pbs.twimg.com/profile_images/565745620128780289/j8vPeZdC_200x200.jpeg"/>
+        <p>Toaster Geek</p>
       </article>
       <article id='gender'>
         <h3>Gender:</h3>
+        <p>Male</p>
       </article>
        <article>
         <h3>Favorite Genres:</h3>
         <ul id="genres">
+          <li>Polka</li>
+          <li>Fusion Jazz</li>
+          <li>Afro Beat</li>
+          <li>Gangster Rap</li>
         </ul>
       </article>
       <article id="interested_in">
         <h3>Interested in:</h3>
+        <p>Women</p>
       </article>
       <article id="bio">
         <h3>Bio:</h3>
+        <p>I like Zaphod.  I turn over rocks.  I chase unicorns.  I believe the singularity is coming soon.  I love to code in PHP4.  I just really like toasters.  #ToastLife!</p>
       </article>
     </div>
   <footer>
@@ -38,7 +59,24 @@
   <img src="http://api.eventful.com/images/powered/eventful_58x20.gif"
     alt="Local Events, Concerts, Tickets">
   <p><a href="http://eventful.com/">Events</a> by Eventful</p>
-</div>
- --></footer>
+</div> -->
+</footer>
+<footer id="lowerFooter">
+    <div class="eventful-badge eventful-small">
+    <a href="http://eventful.com/">
+    <img src="http://api.eventful.com/images/powered/eventful_58x20.gif"
+    alt="Local Events, Concerts, Tickets">
+    Events
+    <p>by Eventful</p> </a>
+    </div>
+    <nav id="menu">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="form.html">Harmonyze</a></li>
+        </ul>
+  </nav>
+  </footer>
 </body>
 </html>
+
