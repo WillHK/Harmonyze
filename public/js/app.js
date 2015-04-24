@@ -37,7 +37,7 @@ $(function() {
           $('.events').on('click', function() {
             var eventJSON = JSON.stringify(event);
             localStorage.setItem(this.id, eventJSON);
-            window.location.replace('user.html?ID=' + this.id);
+            window.location.replace('event.html?ID=' + this.id);
             });
         }
       },
